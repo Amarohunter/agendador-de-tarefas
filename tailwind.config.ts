@@ -17,6 +17,10 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		fontFamily: {
+			sans: ['Inter', 'system-ui', 'sans-serif'],
+			display: ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
+		},
 		extend: {
 			colors: {
 				border: 'hsl(var(--border))',
@@ -25,35 +29,44 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: {
 					DEFAULT: 'hsl(var(--background))',
-					secondary: 'hsl(var(--background-secondary))'
+					secondary: 'hsl(var(--background-secondary))',
+					accent: 'hsl(var(--background-accent))'
 				},
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					dark: 'hsl(var(--primary-dark))',
 					light: 'hsl(var(--primary-light))',
+					glow: 'hsl(var(--primary-glow))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				success: {
 					DEFAULT: 'hsl(var(--success))',
 					light: 'hsl(var(--success-light))',
+					glow: 'hsl(var(--success-glow))',
 					foreground: 'hsl(var(--success-foreground))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
+					dark: 'hsl(var(--secondary-dark))',
+					light: 'hsl(var(--secondary-light))',
+					neutral: 'hsl(var(--secondary-neutral))',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					light: 'hsl(var(--destructive-light))',
+					glow: 'hsl(var(--destructive-glow))',
 					foreground: 'hsl(var(--destructive-foreground))'
 				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
+					light: 'hsl(var(--muted-light))',
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
+					bright: 'hsl(var(--accent-bright))',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
 				popover: {
@@ -84,14 +97,19 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-secondary': 'var(--gradient-secondary)',
 				'gradient-success': 'var(--gradient-success)',
-				'gradient-bg': 'var(--gradient-bg)'
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-hover': 'var(--gradient-hover)'
 			},
 			boxShadow: {
 				'sm': 'var(--shadow-sm)',
 				'md': 'var(--shadow-md)',
 				'lg': 'var(--shadow-lg)',
-				'primary': 'var(--shadow-primary)'
+				'primary': 'var(--shadow-primary)',
+				'success': 'var(--shadow-success)',
+				'glow': 'var(--shadow-glow)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)',

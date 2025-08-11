@@ -6,10 +6,11 @@
 
 @layer base {
   :root {
-    /* Background gradient */
-    --background: 240 25% 98%;
-    --background-secondary: 245 25% 95%;
-    --foreground: 224 20% 15%;
+    /* Enhanced color palette with more vibrancy */
+    --background: 245 30% 98%;
+    --background-secondary: 250 35% 96%;
+    --background-accent: 255 40% 94%;
+    --foreground: 225 25% 12%;
 
     /* Card system */
     --card: 0 0% 100%;
@@ -19,32 +20,42 @@
     --popover: 0 0% 100%;
     --popover-foreground: 224 20% 15%;
 
-    /* Primary brand colors - Modern blue/purple gradient */
-    --primary: 250 84% 60%;
-    --primary-dark: 250 84% 50%;
-    --primary-light: 250 84% 70%;
+    /* Modern gradient color system */
+    --primary: 260 85% 65%;
+    --primary-dark: 260 85% 55%;
+    --primary-light: 260 85% 75%;
+    --primary-glow: 260 85% 85%;
     --primary-foreground: 0 0% 100%;
 
-    /* Success green */
-    --success: 142 76% 45%;
-    --success-light: 142 76% 55%;
+    /* Enhanced secondary palette */
+    --secondary: 280 70% 70%;
+    --secondary-dark: 280 70% 60%;
+    --secondary-light: 280 70% 80%;
+    
+    /* Vibrant success palette */
+    --success: 145 80% 50%;
+    --success-light: 145 80% 60%;
+    --success-glow: 145 80% 90%;
     --success-foreground: 0 0% 100%;
 
-    /* Secondary colors */
-    --secondary: 240 15% 94%;
-    --secondary-foreground: 224 20% 25%;
+    /* Refined neutral colors */
+    --secondary-neutral: 245 20% 94%;
+    --secondary-foreground: 225 25% 20%;
 
-    /* Muted colors */
-    --muted: 240 15% 92%;
-    --muted-foreground: 224 15% 45%;
+    /* Subtle muted colors */
+    --muted: 245 25% 93%;
+    --muted-foreground: 225 20% 50%;
+    --muted-light: 245 25% 96%;
 
-    /* Accent colors */
-    --accent: 250 84% 95%;
-    --accent-foreground: 250 84% 30%;
+    /* Accent colors with personality */
+    --accent: 270 80% 92%;
+    --accent-foreground: 270 80% 35%;
+    --accent-bright: 270 80% 70%;
 
-    /* Destructive red */
-    --destructive: 0 84% 60%;
-    --destructive-light: 0 84% 70%;
+    /* Enhanced destructive colors */
+    --destructive: 10 90% 65%;
+    --destructive-light: 10 90% 75%;
+    --destructive-glow: 10 90% 90%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders and inputs */
@@ -58,16 +69,21 @@
     --radius-sm: 0.5rem;
     --radius-lg: 1rem;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(250 84% 60%), hsl(260 84% 65%));
-    --gradient-success: linear-gradient(135deg, hsl(142 76% 45%), hsl(152 76% 50%));
-    --gradient-bg: linear-gradient(135deg, hsl(240 25% 98%), hsl(245 25% 95%));
+    /* Enhanced gradients with more depth */
+    --gradient-primary: linear-gradient(135deg, hsl(260 85% 65%), hsl(280 80% 70%), hsl(300 75% 75%));
+    --gradient-secondary: linear-gradient(135deg, hsl(280 70% 70%), hsl(300 65% 75%));
+    --gradient-success: linear-gradient(135deg, hsl(145 80% 50%), hsl(165 75% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(245 30% 98%), hsl(250 35% 96%), hsl(255 40% 94%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.9), hsl(0 0% 100% / 0.7));
+    --gradient-hover: linear-gradient(135deg, hsl(260 85% 70%), hsl(280 80% 75%));
     
-    /* Shadows */
-    --shadow-sm: 0 2px 4px -1px hsl(240 15% 85% / 0.3);
-    --shadow-md: 0 4px 6px -1px hsl(240 15% 85% / 0.4);
-    --shadow-lg: 0 10px 15px -3px hsl(240 15% 85% / 0.5);
-    --shadow-primary: 0 4px 12px hsl(250 84% 60% / 0.3);
+    /* Enhanced shadows with color */
+    --shadow-sm: 0 2px 8px hsl(260 85% 65% / 0.15);
+    --shadow-md: 0 4px 12px hsl(260 85% 65% / 0.2);
+    --shadow-lg: 0 8px 24px hsl(260 85% 65% / 0.25);
+    --shadow-primary: 0 8px 32px hsl(260 85% 65% / 0.4);
+    --shadow-success: 0 4px 16px hsl(145 80% 50% / 0.3);
+    --shadow-glow: 0 0 40px hsl(260 85% 75% / 0.6);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -135,8 +151,10 @@
   }
 
   body {
-    @apply bg-gradient-bg text-foreground min-h-screen;
+    @apply bg-gradient-hero text-foreground min-h-screen font-sans;
     background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   /* Custom utility classes */
