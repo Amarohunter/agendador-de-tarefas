@@ -1,73 +1,54 @@
-# Welcome to your Lovable project
+# Agendador de Tarefas
 
-## Project info
+Bem-vindo ao **Agendador de Tarefas**, uma aplicação simples e eficiente para gerenciar suas tarefas diárias.
 
-**URL**: https://lovable.dev/projects/63aaf195-d712-4368-85d1-5c2d89540bf3
+## Sobre o projeto
 
-## How can I edit this code?
+O Agendador de Tarefas é uma aplicação do tipo *todo list* desenvolvida para ajudar você a organizar, acompanhar e concluir suas tarefas de forma prática e intuitiva.
 
-There are several ways of editing your application.
+## Funcionalidades
 
-**Use Lovable**
+- Adicionar, editar e remover tarefas
+- Marcar tarefas como concluídas
+- Visualização clara das tarefas pendentes e concluídas
+- Interface responsiva e fácil de usar
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/63aaf195-d712-4368-85d1-5c2d89540bf3) and start prompting.
+## Tecnologias utilizadas
 
-Changes made via Lovable will be committed automatically to this repo.
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://react.dev/)
+- [shadcn-ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-**Use your preferred IDE**
+## Como rodar o projeto localmente
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Certifique-se de ter o [Node.js](https://nodejs.org/) e o [npm](https://www.npmjs.com/) instalados.
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone o repositório
+git clone <URL_DO_SEU_REPOSITORIO>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Acesse a pasta do projeto
+cd agendador-de-tarefas
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Instale as dependências
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Inicie o servidor de desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Acesse `http://localhost:5173` no seu navegador para visualizar a aplicação.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Como contribuir
 
-**Use GitHub Codespaces**
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b minha-feature`)
+3. Faça commit das suas alterações (`git commit -m 'feat: minha nova feature'`)
+4. Faça push para a branch (`git push origin minha-feature`)
+5. Abra um Pull Request
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Licença
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/63aaf195-d712-4368-85d1-5c2d89540bf3) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Este projeto está licenciado sob a licença MIT.
