@@ -48,6 +48,11 @@ Acesse `http://localhost:5173` no seu navegador para visualizar a aplicação.
 3. Faça commit das suas alterações (`git commit -m 'feat: minha nova feature'`)
 4. Faça push para a branch (`git push origin minha-feature`)
 5. Abra um Pull Request
+   
+## Regra de Negócio 
+
+Cada tarefa cadastrada deve conter obrigatoriamente um título e uma data de vencimento, garantindo que o usuário possa visualizar e priorizar suas atividades com base no prazo. Tarefas não podem ser marcadas como concluídas sem antes terem sido salvas com todos os campos obrigatórios preenchidos. Além disso, o sistema impede a duplicação de tarefas com o mesmo título e data, promovendo uma organização mais eficiente e evitando redundâncias no planejamento diário.
+
 
 ## Licença
 
